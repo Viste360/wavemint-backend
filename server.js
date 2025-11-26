@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
-
+import authRoute from "./routes/auth.js";
+app.use("/auth", authRoute);
 import artworkRoute from "./routes/artwork.js";
 import enhanceRoute from "./routes/enhance.js";
 import smartCropRoute from "./routes/smartcrop.js";
