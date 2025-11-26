@@ -9,6 +9,8 @@ import smartCropRoute from "./routes/smartcrop.js";
 const app = express();
 app.use(cors());
 app.use(express.json());
+import authRoute from "./routes/auth.js";
+app.use("/auth", authRoute);
 
 app.use("/artwork", artworkRoute);
 app.use("/enhance", enhanceRoute);
