@@ -8,7 +8,7 @@ import smartCropRoute from "./routes/smartcrop.js";
 
 const app = express();
 
-// CORS (temporary wide-open)
+// CORS (temporary wide-open for debugging)
 app.use(
   cors({
     origin: "*",
